@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Daftar game PS4 & PS5 tersedia di Pinkz Gamez Surabaya.">
+  <title>Game List — Pinkz Gamez</title>
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<nav class="navbar scrolled">
+  <div class="container">
+    <a class="nav-logo" href="index.html"><img src="img/logo.png" alt="Pinkz Gamez" onerror="this.style.display='none'">Pinkz<span>Gamez</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li><li><a href="booking.html">Booking</a></li><li><a href="games.html" class="active">Games</a></li><li><a href="kontak.html">Kontak</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="booking.html" class="btn btn-primary">Book Sekarang</a>
+      <button class="nav-hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<div class="nav-mobile">
+  <div class="nav-mobile-header">
+    <div class="nav-mobile-brand">Pinkz <span>Gamez</span></div>
+    <button class="close-btn" aria-label="Tutup">✕</button>
+  </div>
+  <div class="nav-mobile-links">
+    <a href="index.html">Home</a>
+    <a href="booking.html">Booking</a>
+    <a href="games.html">Games</a>
+    <a href="kontak.html">Kontak</a>
+  </div>
+  <div class="nav-mobile-cta">
+    <a href="booking.html" class="btn btn-primary">Book Sekarang</a>
+  </div>
+</div>
+
+<!-- PAGE HERO GAMES — full dark, oversized text, filter search langsung keliatan -->
+<div class="games-page-hero">
+  <div class="container">
+    <div class="games-page-hero-inner">
+      <div class="fade-up">
+        <span class="tag">Ready to Play?</span>
+        <h1 class="games-page-title">
+          LIST <em class="accent-pink">GAMES</em>
+        </h1>
+        <p class="games-page-sub">Koleksi PS4 & PS5 lengkap — terus update.<br>Nggak nemu? <strong style="color:var(--pink)">Request ke admin!</strong></p>
+      </div>
+      <div class="games-page-hero-nums fade-up">
+        <div class="gphn-item">
+          <div class="gphn-num" id="gphn-count">30+</div>
+          <div class="gphn-lbl">Game</div>
+        </div>
+        <div class="gphn-sep"></div>
+        <div class="gphn-item">
+          <div class="gphn-num">2</div>
+          <div class="gphn-lbl">Console</div>
+        </div>
+        <div class="gphn-sep"></div>
+        <div class="gphn-item">
+          <div class="gphn-num">∞</div>
+          <div class="gphn-lbl">Request</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- GAMES CONTENT -->
+<section class="games-page">
+  <div class="container">
+    <div class="games-controls">
+      <div class="games-search-wrap">
+        <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+        <input class="games-search" id="games-search" type="search" placeholder="Cari game…" autocomplete="off">
+      </div>
+      <select class="games-sort" id="games-sort">
+        <option value="newest">Terbaru</option>
+        <option value="az">A – Z</option>
+        <option value="za">Z – A</option>
+      </select>
+      <span id="games-count" style="font-size:13px;color:var(--text-dim);white-space:nowrap"></span>
+    </div>
+    <div class="genre-filters" id="genre-filters"></div>
+
+    <div class="games-grid" id="games-grid"></div>
+
+    <!-- CTA bottom -->
+    <div class="games-cta-split">
+      <div>
+        <p class="section-label">Nggak nemu game kamu?</p>
+        <h3 class="games-cta-title">Kami terus update<br><em>koleksi setiap bulan.</em></h3>
+      </div>
+      <div class="games-cta-action">
+        <p style="color:var(--text-muted);font-size:14px;margin-bottom:16px">Request ke admin — kami usahain!</p>
+        <a href="https://wa.me/6285117288975?text=Halo%20admin%2C%20saya%20mau%20request%20game%3A%20" target="_blank" rel="noopener" class="btn btn-wa">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.555 4.122 1.528 5.862L0 24l6.312-1.505A11.946 11.946 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.686-.5-5.23-1.375l-.374-.223-3.875.923.96-3.773-.245-.389A9.956 9.956 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+          Request Game via WA
+        </a>
+        <a href="booking.html" class="btn btn-primary" style="margin-top:12px">Book Sekarang</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="nav-logo" href="index.html"><img src="img/logo.png" alt="logo" onerror="this.style.display='none'">Pinkz<span style="color:var(--pink)">Gamez</span></a>
+        <p>PS Rental premium di Surabaya dengan vibes aesthetic, fasilitas lengkap, dan harga ramah kantong.</p>
+      </div>
+      <div class="footer-col"><h5>Navigasi</h5><ul><li><a href="index.html">Home</a></li><li><a href="booking.html">Booking</a></li><li><a href="games.html">Game List</a></li><li><a href="kontak.html">Kontak</a></li></ul></div>
+      <div class="footer-col"><h5>Game List</h5><ul><li><a href="games.html">Semua Game</a></li><li><a href="games.html?sort=az">A – Z</a></li><li><a href="booking.html">Book Sekarang</a></li><li><a href="https://wa.me/6285117288975?text=Halo%20admin%2C%20saya%20mau%20request%20game%3A%20" target="_blank">Request Game</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>© 2025 Pinkz Gamez PS Rental · Villa Bukit Mas, Surabaya · Buka 12:00–24:00 WIB</p></div>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+<script src="js/games.js"></script>
+
+</body>
+</html>

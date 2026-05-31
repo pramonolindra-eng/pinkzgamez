@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Booking PS4 & PS5 di Pinkz Gamez Surabaya — isi form, langsung chat admin via WhatsApp.">
+  <title>Booking — Pinkz Gamez</title>
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<nav class="navbar scrolled">
+  <div class="container">
+    <a class="nav-logo" href="index.html"><img src="img/logo.png" alt="Pinkz Gamez" onerror="this.style.display='none'">Pinkz<span>Gamez</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="booking.html" class="active">Booking</a></li>
+      <li><a href="games.html">Games</a></li>
+      <li><a href="kontak.html">Kontak</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="https://wa.me/6285117288975" target="_blank" class="btn btn-wa" style="padding:10px 20px;font-size:13px">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.555 4.122 1.528 5.862L0 24l6.312-1.505A11.946 11.946 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.686-.5-5.23-1.375l-.374-.223-3.875.923.96-3.773-.245-.389A9.956 9.956 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        WA Admin
+      </a>
+      <button class="nav-hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<div class="nav-mobile">
+  <div class="nav-mobile-header">
+    <div class="nav-mobile-brand">Pinkz <span>Gamez</span></div>
+    <button class="close-btn" aria-label="Tutup">✕</button>
+  </div>
+  <div class="nav-mobile-links">
+    <a href="index.html">Home</a>
+    <a href="booking.html">Booking</a>
+    <a href="games.html">Games</a>
+    <a href="kontak.html">Kontak</a>
+  </div>
+  <div class="nav-mobile-cta">
+    <a href="booking.html" class="btn btn-primary">Book Sekarang</a>
+  </div>
+</div>
+
+<!-- PAGE HERO — split layout -->
+<div class="page-hero-split">
+  <div class="container">
+    <div class="page-hero-split-inner">
+      <div class="page-hero-split-text fade-up">
+        <span class="tag">🎮 Booking Online</span>
+        <h1 class="page-hero-split-title" style="margin-top:16px">
+          BOOK UNIT<br><em class="accent-pink">SEKARANG.</em>
+        </h1>
+        <p class="page-hero-split-desc">Isi form, kirim ke admin WA — selesai. Slot kamu aman sebelum berangkat. Bayar langsung di tempat!</p>
+        <div class="page-hero-split-tags">
+          <span class="split-tag">✅ Booking Gratis</span>
+          <span class="split-tag">⚡ Konfirmasi Cepat</span>
+          <span class="split-tag">💳 Bayar di Tempat</span>
+          <span class="split-tag">🔒 Slot Terjamin</span>
+        </div>
+      </div>
+      <div class="page-hero-split-side fade-up">
+        <div class="booking-hero-prices">
+          <div class="bhp-label">Harga Sewa</div>
+          <div class="bhp-row">
+            <span class="bhp-console">PS4</span>
+            <span class="bhp-price">Rp 15.000<small>/jam</small></span>
+          </div>
+          <div class="bhp-divider"></div>
+          <div class="bhp-row">
+            <span class="bhp-console">PS5</span>
+            <span class="bhp-price">Rp 20.000<small>/jam</small></span>
+          </div>
+          <div class="bhp-note">4K QLED · PS Plus · WiFi included</div>
+          <a href="#booking-form" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:20px">Isi Form Sekarang ↓</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FORM + SUMMARY -->
+<section class="form-page">
+  <div class="container">
+    <div class="form-wrapper">
+      <div>
+        <form class="form-card" id="booking-form" novalidate>
+          <h2 style="font-family:var(--font-display);font-size:1.5rem;font-weight:700;margin-bottom:28px;padding-bottom:20px;border-bottom:1px solid var(--border-dim)">Detail Booking</h2>
+          <div class="form-group">
+            <label class="form-label" for="inp-nama">Nama Lengkap <span>*</span></label>
+            <input class="form-input" id="inp-nama" type="text" placeholder="Contoh: Budi Santoso" autocomplete="name">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="inp-wa">Nomor WhatsApp <span>*</span></label>
+            <input class="form-input" id="inp-wa" type="tel" placeholder="08xxxxxxxxxx" autocomplete="tel">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="inp-tgl">Tanggal Booking <span>*</span></label>
+            <input class="form-input" id="inp-tgl" type="date">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="sel-unit">Pilih Unit <span>*</span></label>
+            <select class="form-select" id="sel-unit">
+              <option value="">— Pilih Console —</option>
+              <option value="ps4">PS4 — Rp 15.000 / jam</option>
+              <option value="ps5">PS5 — Rp 20.000 / jam</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <div class="form-group" style="margin-bottom:0">
+              <label class="form-label" for="sel-jam">Jam Mulai <span>*</span></label>
+              <select class="form-select" id="sel-jam">
+                <option value="">— Jam —</option>
+                <option value="12:00">12:00</option><option value="13:00">13:00</option><option value="14:00">14:00</option>
+                <option value="15:00">15:00</option><option value="16:00">16:00</option><option value="17:00">17:00</option>
+                <option value="18:00">18:00</option><option value="19:00">19:00</option><option value="20:00">20:00</option>
+                <option value="21:00">21:00</option><option value="22:00">22:00</option><option value="23:00">23:00</option>
+              </select>
+            </div>
+            <div class="form-group" style="margin-bottom:0">
+              <label class="form-label" for="sel-durasi">Durasi <span>*</span></label>
+              <select class="form-select" id="sel-durasi">
+                <option value="0">— Durasi —</option>
+                <option value="1">1 Jam</option><option value="2">2 Jam</option><option value="3">3 Jam</option>
+                <option value="4">4 Jam</option><option value="5">5 Jam</option><option value="6">6 Jam</option>
+                <option value="7">7 Jam</option><option value="8">8 Jam</option>
+              </select>
+            </div>
+          </div>
+          <div style="background:var(--pink-subtle);border:1px solid var(--border);border-radius:var(--radius);padding:14px 18px;margin-block:24px;font-size:13px;color:var(--text-muted);line-height:1.6">
+            💡 <strong style="color:var(--text)">Info:</strong> Booking akan mengirim pesan otomatis ke WhatsApp admin. Ketersediaan dikonfirmasi admin. Pembayaran di tempat (QRIS / Cash / Transfer).
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;font-size:16px;padding:16px">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.555 4.122 1.528 5.862L0 24l6.312-1.505A11.946 11.946 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.686-.5-5.23-1.375l-.374-.223-3.875.923.96-3.773-.245-.389A9.956 9.956 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+            Book Sekarang via WhatsApp
+          </button>
+        </form>
+      </div>
+
+      <div>
+        <div class="booking-summary">
+          <h3 class="summary-title">Ringkasan Booking</h3>
+          <div class="summary-row"><span class="label">Nama</span><span class="value" id="sum-nama">—</span></div>
+          <div class="summary-row"><span class="label">Unit</span><span class="value" id="sum-unit">—</span></div>
+          <div class="summary-row"><span class="label">Tanggal</span><span class="value" id="sum-tgl">—</span></div>
+          <div class="summary-row"><span class="label">Jam Mulai</span><span class="value" id="sum-jam">—</span></div>
+          <div class="summary-row"><span class="label">Durasi</span><span class="value" id="sum-durasi">—</span></div>
+          <div class="summary-divider"></div>
+          <div class="summary-total"><span class="label">Estimasi Total</span><span class="value" id="sum-total">—</span></div>
+          <p class="summary-note">Bayar langsung di tempat</p>
+          <div style="margin-top:24px;padding-top:20px;border-top:1px solid var(--border-dim)">
+            <p style="font-size:12px;color:var(--text-dim);line-height:1.6;margin-bottom:16px">Ada pertanyaan sebelum booking? Chat admin kami:</p>
+            <a href="https://wa.me/6285117288975" target="_blank" rel="noopener" class="btn btn-wa" style="width:100%;justify-content:center;font-size:13px;padding:12px">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.555 4.122 1.528 5.862L0 24l6.312-1.505A11.946 11.946 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.686-.5-5.23-1.375l-.374-.223-3.875.923.96-3.773-.245-.389A9.956 9.956 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+              Chat Admin Langsung
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="nav-logo" href="index.html"><img src="img/logo.png" alt="logo" onerror="this.style.display='none'">Pinkz<span style="color:var(--pink)">Gamez</span></a>
+        <p>PS Rental premium di Surabaya dengan vibes aesthetic, fasilitas lengkap, dan harga ramah kantong.</p>
+      </div>
+      <div class="footer-col"><h5>Navigasi</h5><ul><li><a href="index.html">Home</a></li><li><a href="booking.html">Booking</a></li><li><a href="games.html">Game List</a></li><li><a href="kontak.html">Kontak</a></li></ul></div>
+      <div class="footer-col"><h5>Booking</h5><ul><li><a href="booking.html?unit=ps4">Book PS4</a></li><li><a href="booking.html?unit=ps5">Book PS5</a></li><li><a href="index.html#cara-booking">Cara Booking</a></li><li><a href="index.html#unit">Harga & Unit</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Pinkz Gamez PS Rental · Villa Bukit Mas, Surabaya · Buka 12:00–24:00 WIB</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+<script src="js/booking.js"></script>
+</body>
+</html>
